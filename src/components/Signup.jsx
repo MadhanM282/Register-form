@@ -13,6 +13,8 @@ export const Signup = () => {
         gender:"",
         age:"",
         mobile: 0, 
+        adress: "",
+        ocupation: "",
     })
     const handelChange = (e) => {
         const { id, value } = e.target
@@ -31,16 +33,18 @@ export const Signup = () => {
                 <Box>
                     <TextField onChange={(e) => handelChange(e)} sx={{ m: 1, width: "90%" }} id="name" label="username" variant="outlined" />
                     <TextField onChange={(e) => handelChange(e)} sx={{ m: 1, width: "90%" }} id="email" label="email" variant="outlined" />
-
                     <TextField onChange={(e) => handelChange(e)} sx={{ m: 1, width: "90%" }} id="password" label="password" variant="outlined" />
+                    <TextField onChange={(e) => handelChange(e)} sx={{ m: 1, width: "90%" }} id="gender" label="gender" variant="outlined" />
                 </Box>
                 <Box>
 
-                    <TextField onChange={(e) => handelChange(e)} sx={{ m: 1, width: "90%" }} id="gender" label="gender" variant="outlined" />
                     <TextField onChange={(e) => handelChange(e)} sx={{ m: 1, width: "90%" }} id="age" label="age" variant="outlined" />
                     <TextField onChange={(e) => handelChange(e)} sx={{ m: 1, width: "90%" }} id="mobile" label="mobile" variant="outlined" />
+                    <TextField onChange={(e) => handelChange(e)} sx={{ m: 1, width: "90%" }} id="adress" label="Adress" variant="outlined" />
+                    <TextField onChange={(e) => handelChange(e)} sx={{ m: 1, width: "90%" }} id="ocupation" label="Ocupation" variant="outlined" />
 
                 </Box>
+
                
             </Box>
             <Button onClick={(e) => { e.preventDefault(); PostData() }} type="submit" sx={[{ bgcolor: "#000000", m: 1, color: "#f2f2ff" }, () => ({ '&:hover': {bgcolor: "#696969"} })]}>Register</Button>

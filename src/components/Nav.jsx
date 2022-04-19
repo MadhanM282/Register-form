@@ -7,6 +7,7 @@ import { LogoutBUTTON } from "./Logout"
 
 export const Nav = ()=>{
     const {userData,auth} = useSelector((store) => store)
+
     const navigate = useNavigate()
     return (
         <Box sx={{display: 'flex',justifyContent:"space-evenly",bgcolor:"#a6afff",alignItems: 'center'}} position="sticky">
